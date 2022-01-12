@@ -1,103 +1,222 @@
 body {
     overflow-y: hidden;
     overflow-x: hidden;
+    background-color: rgba(223, 217, 192, 0.603);
+    cursor: url('cursor.png'), auto;
 }
 
-#gridA {
-    /* background-color: violet; */
-    display: flex;
-    flex-direction: column;
-}
-#gridB {
-    /* background-color: lime; */
-    display: flex;
-    flex-direction: column;
+h1, h3, h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    margin-left: 2%;
 }
 
-/* .corr {
+#mklivro {
+    width: 80vw;
+    height: auto;
     position: absolute;
-    width: 40%;
-    height: auto;
-    top: -4%;
-    left: 60vh;
-    z-index: 1;
+    top: -20vh;
+    left: 40vw;
 }
-#corr1 {
-    left: 74vh;
-    top: -13%;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-} */
 
-#livros {
-    width: 60vw;
-    margin-left: -6%;
-    margin-top: 8%;
-    height: auto;
-    z-index: 2;
+#sinopse {
+    width: 37vw;
+    position: absolute;
+    top: 4.5vh;
+    left: 15vw;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 1.5vmax;
+    text-indent: 3rem;
+    
+    border-left: 3px solid grey;
+    padding-left: 2vw;
 }
-.txt {
-    margin-left: -10vw;
-    align-self: center;
+
+#aspa {
+    font-size: 10vmax;
+    position: absolute;
+    left: -5%;
+    top: -30%;
 }
-#txt1 {
-    margin-top: 20vh;
+
+#gridC {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 98%;
+    top: 3vh;
 }
+
 #titulo {
-    font-size: 7vw;
-    align-self: center;
-}
-#txt2 {
-    align-self: flex-end;
-    margin-right: 5vw;
-    margin-top: 5vh;
-}
-#subt {
-    align-self: center;
-}
-figure {
-    margin-top: 10vh;
-    position: relative;
-    /* background-color: royalblue; */
-}
-#estrela {
-    position: absolute;
-    top: 10vh;
-    left: 10vh;
-    height: 70%;
-    width: auto;
-    z-index: -1;
+    font-size: 13vw;
+    font-family: 'Bebas Neue', cursive;
+    margin: -3%;
+    margin-left: 2%;
 }
 
-@media (max-width: 980px)
-{
-    #gridA {background-color: lime;}
-    #gridB {
-        background-color: magenta;
+#txt1 {
+    font-size: 3.5vw;
+}
+
+#subt {
+    font-size: 5vw;
+    margin-top: -1%;
+    
+}
+
+#btn-box {
+    position: relative;
+    height: 54vh;
+    width: 10vw;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+}
+.mybtn {
+    margin: 0px;
+}
+.chains {
+    position: absolute;
+    width: auto;
+    height: 97%;
+}
+.btntxt {
+    position: absolute;
+    text-align: center;
+    font-size: 2.3vmin;
+    justify-self: center;
+    align-self: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-top: 10%;
+    color:rgba(20, 20, 20, 0.603)
+}
+
+#btnbox1 {
+    position: relative;
+    height: 18vh;
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#btnbox2 {
+    position: relative;
+    height: 18vh;
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#btnbox3 {
+    position: relative;
+    height: 18vh;
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ANIMAÇAO ROTACAO */
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
     }
-    .txt {
-        font-size: 6vw;
-        margin-left: 0;
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+  .rodar {
+    -webkit-animation: rotating 100s linear infinite;
+    -moz-animation: rotating 100s linear infinite;
+    -ms-animation: rotating 100s linear infinite;
+    -o-animation: rotating 100s linear infinite;
+    animation: rotating 100s linear infinite;
+  }
+  .mybtn:hover .chains {
+    -webkit-animation: rotating 3.5s linear infinite;
+    -moz-animation: rotating 3.5s linear infinite;
+    -ms-animation: rotating 3.5s linear infinite;
+    -o-animation: rotating 3.5s linear infinite;
+    animation: rotating 3.5s linear infinite;
+    width: auto;
+    height: 105%;
+    transition: all 150ms linear;
+  }
+
+  .mybtn:active .chains {
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+    width: auto;
+    height: 80%;
+    transition: all 50ms linear;
+  }
+
+/* VERTICAL */
+
+@media (orientation: portrait) 
+{
+    #mklivro {
+        width: 130vh;
+        top: 29vh;
+        left: -48vw;
     }
     #titulo {
-        font-size: 10vw;
+        font-size: 24.5vw;
     }
     #txt1 {
-        margin-top: 5vh;
+        font-size: 8vw;
     }
-    #estrela {
-        width: auto;
-        height: max-content;
-        left: 0;
-        top: 0;
+    #subt {
+        font-size: 10vw;
+        margin-top: -1%;
+        
+    }
+    #sinopse {
+        display: none;
+    }
+    #btn-box {
         position: absolute;
-        top: -20vh;
+        height: 20vh;
+        width: 100vw;
+        margin-left: 6%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        top: 25vh;
     }
-    #livros {
-        width: 110vw;
-        height: auto;
-        z-index: 2;
-        position: relative;
-        top: -20vh;
+    .mybtn {
+        margin: 13vw;
     }
- }
+    .btntxt {
+        font-size: 4.2vmin;
+    }
+
+}
