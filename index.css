@@ -12,11 +12,10 @@ h1, h3, h2 {
 }
 
 #mklivro {
-    width: 80vw;
+    width: 40vmax;
     height: auto;
     position: absolute;
-    top: -20vh;
-    left: 40vw;
+    left: 60vw;
 }
 
 #sinopse {
@@ -182,21 +181,26 @@ h1, h3, h2 {
 
 @media (orientation: portrait) 
 {
+    body {
+        display: flex;
+    }
     #mklivro {
-        width: 130vh;
-        top: 29vh;
-        left: -48vw;
-        position: fixed;
+        width: 72vh;
+        top: 50vh;
+        left: 5vw;
     }
     #titulo {
         font-size: 24.5vw;
+        margin-left: 12vw;
     }
     #txt1 {
         font-size: 8vw;
+        margin-left: 12vw;
     }
     #subt {
         font-size: 10vw;
         margin-top: -1%;
+        margin-left: 12vw;
         
     }
     #sinopse {
@@ -206,7 +210,7 @@ h1, h3, h2 {
         position: absolute;
         height: 20vh;
         width: 100vw;
-        margin-left: 6%;
+        margin-left: 16vw;
         display: flex;
         align-items: center;
         justify-content: center;
