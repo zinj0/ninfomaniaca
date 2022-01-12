@@ -23,6 +23,10 @@
         <meta name="twitter:creator" content="@">
         <meta name="twitter:description" content="">
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
+
     <!-- Bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -33,26 +37,27 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <div class="container-fluid">
-            <div class="row no-gutters">
-                <div id="gridA" class="col-lg-6">
-                    <h1 id="txt1" class="txt">Os Relatos de uma</h1> 
-                    <h1 id="titulo" class="txt">NINFOMANÍACA</h1>
-                    <h1 id="subt" class="txt">Fantasia ou Realidade?</h1>
-                    <h2 id="txt2" class="txt"><i>por Alessandra Linck</i></h2>
-                    <figure id="correntes">
-                        <!-- <img id="corr1" class="corr"src="chain.png" alt="correntes BDSM">
-                        <img id="corr2" class="corr" src="chain.png" atl="correntes BDSM"> -->
-                    </figure>
-                </div>
-                <div id="gridB" class="col-lg-6 order-lg-first">
+        <div>
+
+                <div>
                     <figure>
-                    <img id="livros" src="mockup livro.png" alt="livros Ninfomaníaca: Fantasia ou Realidade?">
-                    <img id="estrela" src="estrela.svg" alt="estrela disconto">
+                        <img id="mklivro" src="mockuplivro2.png" alt="mockup livro NINFOMANIACA FANTASIA OU REALIDADE?">
+                        <!-- <img id="kiss" src="kiss.svg" alt="marca batom beijo"> -->
                     </figure>
+                    <p id="sinopse"><span id="aspa">"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum libero erat, non elementum mauris ullamcorper ut. Sed ornare massa aliquet tortor commodo, ac commodo nibh viverra."</p>
                 </div>
             </div>
+            <div id="gridC" class="row no-gutters">
+                <div id="btn-box">
+                    <figure id="btnbox1" class="mybtn"><img id="btn-livro" class="chains rodar" src="corrbtn.svg" alt="correntes"><p id="txt-livro" class="btntxt">O LIVRO</p></figure>
+                    <figure id="btnbox2" class="mybtn"><img id="btn-autora" class="chains rodar" src="corrbtn.svg" alt="correntes"><p id="txt-autora" class="btntxt">A AUTORA</p></figure>
+                    <figure id="btnbox3" class="mybtn"><img id="btn-comprar" class="chains rodar" src="corrbtn.svg" alt="correntes"><p id="txt-comprar" class="btntxt">ONDE<br> COMPRAR?</p></figure>
+                </div>
+                <h3 id="txt1" class="txt">Os relatos de uma</h1> 
+                <h1 id="titulo">NINFOMANÍACA</h1>
+                <h2 id="subt" class="txt"><i>fantasia ou realidade?</i></h1>
+            </div>
         </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     </body>
-    
 </html>
