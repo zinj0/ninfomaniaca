@@ -5,6 +5,14 @@ body {
     cursor: url('cursor.png'), auto;
 }
 
+::-moz-selection { /* Code for Firefox */
+    background: lightcoral;
+  }
+  
+  ::selection {
+    background: lightcoral;
+  }
+
 h1, h3, h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
