@@ -5,6 +5,10 @@ body {
     cursor: url('cursor.png'), auto;
 }
 
+body:active {
+    cursor: url('cursor2.png'), auto;
+}
+
 ::-moz-selection { /* Code for Firefox */
     background: lightcoral;
   }
