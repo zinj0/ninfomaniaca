@@ -5,6 +5,42 @@ body {
     cursor: url('cursor.png'), auto;
 }
 
+body:active {
+    cursor: url('cursor2.png'), auto;
+}
+
+#estrela {
+    width: 30vw;
+    position: absolute;
+    top: 4vh;
+    left: 48vw;
+}
+
+/* #mklivro:hover ~ #estrela {
+    -webkit-animation: rotating 10s linear infinite;
+    -moz-animation: rotating 10s linear infinite;
+    -ms-animation: rotating 10s linear infinite;
+    -o-animation: rotating 10s linear infinite;
+    animation: rotating 10s linear infinite;
+} */
+
+#credito {
+    position: fixed;
+    font-size: 1.5vmin;
+    transform: rotate(90deg);
+    left: 92vw;
+    top: 80vh;
+    width: 30vh;
+}
+
+::-moz-selection { /* Code for Firefox */
+    background: lightcoral;
+  }
+  
+  ::selection {
+    background: lightcoral;
+  }
+
 h1, h3, h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
