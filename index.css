@@ -227,9 +227,11 @@ h1, h3, h2 {
     }
     .mybtn {
         margin: 13vw;
+        display: none;
     }
     .btntxt {
         font-size: 4.2vmin;
+        display: none;
     }
 
 }
