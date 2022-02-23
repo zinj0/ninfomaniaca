@@ -12,10 +12,16 @@ body:active {
     width: 30vw;
     position: absolute;
     top: 4vh;
-    left: 52vw;
-    transition: all 200ms linear;
-
+    left: 48vw;
 }
+
+/* #mklivro:hover ~ #estrela {
+    -webkit-animation: rotating 10s linear infinite;
+    -moz-animation: rotating 10s linear infinite;
+    -ms-animation: rotating 10s linear infinite;
+    -o-animation: rotating 10s linear infinite;
+    animation: rotating 10s linear infinite;
+} */
 
 #credito {
     position: fixed;
@@ -44,38 +50,93 @@ h1, h3, h2 {
     width: 37.5vmax;
     height: auto;
     position: absolute;
-    left: 60vw;
+    left: 57vw;
     z-index: 2;
 }
 
-#sinopse {
-    width: 37vw;
+#perfil {
+    width: 15vmax;
+    height: auto;
+    z-index: 2;
+    border-radius: 50%;
+    position: relative;
+}
+
+.boxInfos {
+    display: flex;
+    flex-direction: column;
+    
     position: absolute;
-    top: 4.5vh;
-    left: 15vw;
+    width: 35vw;
+    height: 30vw;
+    left: 18vw;
+    top: 0;
+
+    padding-top: 6.6vmin;
+
+    flex-direction: column;
+    align-items: center;
+    flex-direction: center;
+    
+}
+
+.infos {
+    width: 32vw;
+    position: relative;
 
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
-    font-size: 1.5vmax;
+    font-size: 1.3vmax;
     text-indent: 3rem;
     
     border-left: 3px solid grey;
     padding-left: 2vw;
 }
 
-#aspa {
-    font-size: 10vmax;
+#infoAutora {
+    display: flex;
+    top: -100vh;
+}
+
+#infoContato {
+    display: flex;
+    top: -100vh;
+}
+
+#infoComprar {
+    display: flex;
+    top: -100vh;
+}
+
+.voltar {
     position: absolute;
-    left: -5%;
-    top: -30%;
+    top: 10.4%;
+    left: 13%;
+    font-size: 3vh;
+    z-index: 5;
+}
+.voltar:hover {
+    color: darkslategrey
+}
+.voltar:active {
+    font-size: 2.7vh;
+}
+
+#aspa {
+    left: -3%;
+    top: -25%;
+    font-size: 7vmax;
+    position: absolute;
 }
 
 #gridC {
     display: flex;
     flex-direction: column;
     position: fixed;
-    width: 98%;
-    top: 3vh;
+    width: 80%;
+    top: 6.3vmin;
+    align-self: center;
+    margin-left: 5vw;
 }
 
 #titulo {
@@ -102,13 +163,11 @@ h1, h3, h2 {
     display: flex;
     flex-direction: column;
 }
-.mybtn {
-    margin: 0px;
-}
+
 .chains {
     position: absolute;
     width: auto;
-    height: 97%;
+    height: 109%;
 }
 .btntxt {
     position: absolute;
@@ -119,35 +178,18 @@ h1, h3, h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     margin-top: 10%;
-    color:rgba(20, 20, 20, 0.603)
+    color:rgba(20, 20, 20, 0.603);
+    user-select: none;
 }
 
-#btnbox1 {
+.btnbox {
     position: relative;
-    height: 18vmin;
-    width: 18vmin;
+    height: 20vmin;
+    width: 20vmin;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: lime;
-
-    border-radius: 100px;
-}
-#btnbox2 {
-    position: relative;
-    height: 18vh;
-    width: 10vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#btnbox3 {
-    position: relative;
-    height: 18vh;
-    width: 10vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-left: 0.5vmin;
 }
 
 /* ANIMAÇAO ROTACAO */
@@ -180,6 +222,19 @@ h1, h3, h2 {
     }
   }
 
+
+  .btnativo {
+    -webkit-animation: rotating 5s linear infinite;
+    -moz-animation: rotating 5s linear infinite;
+    -ms-animation: rotating 5s linear infinite;
+    -o-animation: rotating 5s linear infinite;
+    animation: rotating 5s linear infinite;
+    width: auto;
+    height: 100%;
+    transition: all 50ms linear;
+  }
+
+
   .rodar {
     -webkit-animation: rotating 100s linear infinite;
     -moz-animation: rotating 100s linear infinite;
@@ -187,27 +242,28 @@ h1, h3, h2 {
     -o-animation: rotating 100s linear infinite;
     animation: rotating 100s linear infinite;
   }
-  .mybtn:hover .chains {
+  .btnbox:hover .chains {
     -webkit-animation: rotating 3.5s linear infinite;
     -moz-animation: rotating 3.5s linear infinite;
     -ms-animation: rotating 3.5s linear infinite;
     -o-animation: rotating 3.5s linear infinite;
     animation: rotating 3.5s linear infinite;
     width: auto;
-    height: 105%;
+    height: 116%;
     transition: all 150ms linear;
   }
 
-  .mybtn:active .chains {
+  .btnbox:active .chains {
     -webkit-animation: rotating 2s linear infinite;
     -moz-animation: rotating 2s linear infinite;
     -ms-animation: rotating 2s linear infinite;
     -o-animation: rotating 2s linear infinite;
     animation: rotating 2s linear infinite;
     width: auto;
-    height: 90%;
+    height: 100%;
     transition: all 50ms linear;
   }
+
 
 /* VERTICAL */
 
@@ -221,6 +277,12 @@ h1, h3, h2 {
         width: 72vh;
         top: 50vh;
         left: 5vw;
+    }
+    .chains {
+        display: none;
+    }
+    .estrela {
+        display: none;
     }
     #titulo {
         font-size: 24.5vw;
